@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Enrique Moreno, desarrollador de software enfocado en Python y desarrollo web." />
+  <title>Enrique Moreno | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#inicio">EM<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+      <nav id="navMenu">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Disponible para oportunidades</span>
+          <p class="eyebrow">SOFTWARE DEVELOPER</p>
+          <h1>Construyo software para <span>problemas reales.</span></h1>
+          <p class="hero-copy">
+            Desarrollador enfocado en Python, aplicaciones de escritorio y desarrollo web.
+            Creo herramientas pensadas para negocios, automatización y experiencias digitales.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn secondary" href="#contacto">Contactarme</a>
+          </div>
+          <div class="mini-stats">
+            <div><strong>Python</strong><span>Desktop Apps</span></div>
+            <div><strong>Web</strong><span>HTML · CSS · JS</span></div>
+            <div><strong>SQL</strong><span>Bases de datos</span></div>
+          </div>
+        </div>
+
+        <div class="code-card" aria-hidden="true">
+          <div class="code-top"><span></span><span></span><span></span></div>
+          <pre><code><span class="c1">class</span> <span class="c2">Developer</span>:
+    <span class="c1">def</span> <span class="c3">__init__</span>(self):
+        self.name = <span class="c4">"Enrique Moreno"</span>
+        self.focus = [
+            <span class="c4">"Python"</span>,
+            <span class="c4">"Web Development"</span>,
+            <span class="c4">"Business Software"</span>
+        ]
+
+    <span class="c1">def</span> <span class="c3">build</span>(self, problem):
+        <span class="c1">return</span> solution(problem)</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <p class="section-label">01 / SOBRE MÍ</p>
+        <div class="about-grid">
+          <h2>No programo solamente ejercicios. <span>Construyo soluciones.</span></h2>
+          <div>
+            <p>
+              Mi enfoque es aprender programación desarrollando proyectos que puedan utilizarse
+              en escenarios reales. Actualmente trabajo con Python, interfaces de escritorio,
+              bases de datos y tecnologías web.
+            </p>
+            <p>
+              Mi objetivo es crear aplicaciones claras, funcionales y mantenibles, mientras sigo
+              ampliando mis conocimientos hacia desarrollo Full Stack.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="proyectos">
+      <div class="container">
+        <p class="section-label">02 / PROYECTOS</p>
+        <div class="section-heading">
+          <h2>Proyectos destacados</h2>
+          <p>Software construido para resolver necesidades reales.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project featured">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <span class="project-type">DESKTOP SOFTWARE</span>
+              <h3>X by Ximena</h3>
+              <p>
+                Sistema de administración para una boutique. Diseñado para gestionar productos,
+                inventario, clientes, ventas y operaciones desde una computadora con Windows.
+              </p>
+              <div class="tags">
+                <span>Python</span><span>Kivy</span><span>SQLite</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="disabled">Código próximamente</a>
+                <a href="#" class="disabled">Caso de estudio</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <span class="project-type">WEB DEVELOPMENT</span>
+              <h3>Portfolio Developer</h3>
+              <p>
+                Sitio web responsive creado desde cero para presentar proyectos, habilidades y
+                experiencia de desarrollo.
+              </p>
+              <div class="tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#inicio">Ver proyecto</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-number">03</div>
+            <div class="project-content">
+              <span class="project-type">BUSINESS SOFTWARE</span>
+              <h3>Culpable POS</h3>
+              <p>
+                Próximo sistema para administrar ventas, inventario, costos, productos y utilidad
+                de un negocio de alimentos.
+              </p>
+              <div class="tags">
+                <span>Python</span><span>SQLite</span><span>Reports</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="disabled">En desarrollo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-number">04</div>
+            <div class="project-content">
+              <span class="project-type">FULL STACK</span>
+              <h3>X by Ximena Web</h3>
+              <p>
+                Próxima experiencia web para catálogo de productos, carrito y contacto directo
+                por WhatsApp.
+              </p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="disabled">Próximamente</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tecnologias">
+      <div class="container">
+        <p class="section-label">03 / TECNOLOGÍAS</p>
+        <div class="skills">
+          <div class="skill"><strong>Python</strong><span>Aplicaciones y lógica</span></div>
+          <div class="skill"><strong>Kivy</strong><span>Interfaces de escritorio</span></div>
+          <div class="skill"><strong>SQLite</strong><span>Bases de datos</span></div>
+          <div class="skill"><strong>HTML5</strong><span>Estructura web</span></div>
+          <div class="skill"><strong>CSS3</strong><span>Diseño responsive</span></div>
+          <div class="skill"><strong>JavaScript</strong><span>Interactividad</span></div>
+          <div class="skill"><strong>Git</strong><span>Control de versiones</span></div>
+          <div class="skill"><strong>GitHub</strong><span>Repositorios</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="container contact">
+        <p class="section-label">04 / CONTACTO</p>
+        <h2>¿Construimos algo útil?</h2>
+        <p>
+          Estoy desarrollando proyectos de software y ampliando mi experiencia en Python y
+          desarrollo web.
+        </p>
+        <div class="contact-links">
+          <a href="#" id="githubLink">GitHub</a>
+          <a href="#" id="linkedinLink">LinkedIn</a>
+          <a href="mailto:tuemail@example.com">Email</a>
+        </div>
+        <small>Reemplaza los enlaces por tus perfiles reales cuando estén listos.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Enrique Moreno</span>
+      <span>Diseñado y desarrollado desde cero.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
