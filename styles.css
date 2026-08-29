@@ -113,3 +113,27 @@ footer{border-top:1px solid rgba(255,255,255,.055);padding:28px 0;color:#738094;
   .hero-actions,.contact-links,.footer-inner{flex-direction:column}
   .btn{text-align:center}
 }
+.case-gallery{
+  margin-top:50px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.case-gallery img{
+  width:100%;
+  border-radius:16px;
+  border:1px solid var(--border);
+  display:block;
+  transition:.25s;
+}
+
+.case-gallery img:hover{
+  transform:translateY(-4px);
+}
+
+@media(max-width:800px){
+  .case-gallery{
+    grid-template-columns:1fr;
+  }
+}
