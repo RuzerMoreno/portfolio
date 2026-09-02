@@ -137,3 +137,14 @@ footer{border-top:1px solid rgba(255,255,255,.055);padding:28px 0;color:#738094;
     grid-template-columns:1fr;
   }
 }
+
+.project-image {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 24px 0;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  object-fit: cover;
+}
